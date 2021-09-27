@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --s1: style.css;
+  --s2: style1.css;
+  --s3: style2.css;
+  --s4: style4.css;
+
+}
+
+#s1 {
+    link href:vr(--s1);
+}
+
+body {
+  margin: 10;
+}
+/*Style the header */
+.header {
+  background-color: #C7A27C;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+/*Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #EFD2CB;
+  }
+/*Style the topnav links */
+.topnav  a{
+  float: left;
+  display: block;
+  color: #D65780;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #EE9480;
+    color: #CCD7C5;
+  }
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+  }

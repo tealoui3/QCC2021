@@ -1,0 +1,38 @@
+*{
+  margin:0;
+  padding:0;
+}
+h1{
+  color:whitesmoke;
+}
+body{
+  background-color:#0D0D0B;
+  color:#FDFAEB;
+
+  font-family: Georgia, serif;
+  font-size:16px;
+  font-weight:normal;
+  /* OR */
+  font: normal 16px Georgia, serif;
+
+  line-height:1.6em;  
+  margin:0;
+}
+
+.box-1{
+  color:#fcce0c;
+  font-size:20px;
+  font-weight:bold;
+  padding:20px;
+  margin:20px 0;
+}
+.box-2{
+  background-color:#FDFAEB;
+  color:#0D0D0B;
+  width:80%;
+  padding:50px;
+  margin:20px 0;
+}
+.box-3{
+  margin:20px 0;
+}
