@@ -1,5 +1,5 @@
 #execution 1
-rounds=input("How many rounds do you want to play? ")
+rounds=input("How many rounds do you want to pla? ")
 attempts=0
 for i in range(int(rounds)):
   num=7
