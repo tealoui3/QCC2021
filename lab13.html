@@ -1,0 +1,112 @@
+<html>
+<head>
+  <style>
+  body{
+  background-color:#f4f4f4;
+  color:black;
+  font: normal 16px Georgia, serif;
+  line-height:1.6em;  
+  margin:0;
+  }
+  .button{
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:#333;
+    color:#fff;
+    border-color:black;
+  }
+  .previous {
+    font: lora, serif;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    color: white;
+    border-radius: 5px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    left: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #c5ced5; /* Set a background color */
+    //opacity:0.5;
+    color: black; 
+  }
+  .next {
+    font: lora, serif;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    color: white;
+    border-radius: 5px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #c5ced5; /* Set a background color */
+    //opacity:0.5;
+    color: black; 
+  }
+  </style>
+<center>
+  <title>Lab 13</title>
+  <h1>Lab 13 - Assignment Operator</h1>
+  <h2>Tiffany Louie</h2>
+</center>
+</head>
+<body>
+  <a href="lab12.html" class="previous">&laquo; Lab 12</a>
+  <a href="lab14.html" class="next">Lab 14 &raquo;</a>
+  <hr>
+  <br>
+<center>
+  <form name="formCalc">
+  First Number: 12
+  <br>
+  <br>
+  Second Number:
+  <input type="text" name="second" maxlength="4" size="4">
+  <br>
+  <br>
+  <input type="button" class="button" onClick="prodValues()"  Value="x">
+  <input type="button" class="button" onClick="quotValues()"  Value="/">
+  <input type="button" class="button" onClick="sumValues()"  Value="+">
+  <input type="button" class="button" onClick="diffValues()"  Value="-">
+  <br>
+  <br>
+  Result = <span id="theResult"></span>  
+  </form> 
+</center>
+  <script>  
+  function prodValues(){
+    numOne=12;
+    numTwo=Number(document.formCalc.second.value);
+    theProd=numOne*numTwo;
+    document.getElementById("theResult").innerHTML=theProd;
+  }
+  function quotValues(){
+    numOne=12;
+    numTwo=Number(document.formCalc.second.value);
+    theQuot=numOne/numTwo;
+    document.getElementById("theResult").innerHTML=theQuot; 
+  }
+  function sumValues(){
+    numOne=12;
+    numTwo=Number(document.formCalc.second.value);
+    theSum=numOne+numTwo;
+    document.getElementById("theResult").innerHTML=theSum;  
+  }
+  function diffValues(){
+    numOne=12;
+    numTwo=Number(document.formCalc.second.value);
+    theDiff=numOne-numTwo;
+    document.getElementById("theResult").innerHTML=theDiff;  
+  } 
+  </script>
+</body>
+</html>

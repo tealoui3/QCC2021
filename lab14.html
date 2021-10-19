@@ -1,0 +1,169 @@
+<html>
+<center>
+<head>
+  <style>
+  body{
+  background-color:#f4f4f4;
+  color:black;
+  font: normal 16px Georgia, serif;
+  line-height:1.6em;  
+  margin:0;
+  }
+  .button{
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:#333;
+    color:#fff;
+    border-color:black;
+  }
+  .previous {
+    font: lora, serif;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    color: white;
+    border-radius: 5px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    left: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #c5ced5; /* Set a background color */
+    //opacity:0.5;
+    color: black; 
+  }
+  .next {
+    font: lora, serif;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    color: white;
+    border-radius: 5px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #c5ced5; /* Set a background color */
+    //opacity:0.5;
+    color: black; 
+  }
+  </style>
+<title>Lab 14</title>
+</head>
+<h1>Lab 14 - Comparison Operators</h1>
+<h2>Tiffany Louie</h2>
+</center>
+
+<body>
+  <a href="lab13.html" class="previous">&laquo; Lab 13</a>
+  <a href="index.html" class="next">Index &raquo;</a>
+  <hr>
+  <br>
+<center>
+  <form name="formCalc">
+  <br>
+  <h3><span id="theResult"></span></h3>
+  <br>
+  x:
+  <input type="text" name="first" maxlength="4" size="4">
+  <br>
+  <br>
+  y:
+  <input type="text" name="second" maxlength="4" size="4">
+  <br>
+  <br>
+  <input type="button" class="button" onClick="eqTo()"  Value=" x equal to y?">
+  <br>
+  <br>
+  <input type="button" class="button" onClick="grThan()"  Value=" x greater than y?">
+  <br>
+  <br>
+  <input type="button" class="button" onClick="lsThan()"  Value=" x less than y?">
+  <br>
+  <br>
+  <input type="button" class="button" onClick="grThanEqTo()"  Value=" x greater than or equal to y?">
+  <br>
+  <br>
+  <input type="button" class="button" onClick="lsThanEqTo()"  Value=" x less than or equal to y?">
+  <br>
+  <br>
+  <input type="button" class="button" onClick="notEqTo()"  Value=" x not equal to y?">
+  </form> 
+</center>
+  <script>
+  
+  function eqTo(){
+    numOne=Number(document.formCalc.first.value);
+    numTwo=Number(document.formCalc.second.value);
+    if(numOne==numTwo){
+        theAns=("TRUE");
+      }
+      else {
+        theAns=("FALSE");
+      }
+    document.getElementById("theResult").innerHTML=theAns;
+  }
+  function grThan(){
+    numOne=Number(document.formCalc.first.value);
+    numTwo=Number(document.formCalc.second.value);
+    if(numOne>numTwo){
+        theAns=("TRUE");
+      }
+    else {
+        theAns=("FALSE");
+      }
+    document.getElementById("theResult").innerHTML=theAns;
+  }
+  function lsThan(){
+    numOne=Number(document.formCalc.first.value);
+    numTwo=Number(document.formCalc.second.value);
+    if(numOne<numTwo){
+        theAns=("TRUE");
+      }
+    else {
+        theAns=("FALSE");
+      }
+    document.getElementById("theResult").innerHTML=theAns;
+  }
+  function grThanEqTo(){
+    numOne=Number(document.formCalc.first.value);
+    numTwo=Number(document.formCalc.second.value);
+    if(numOne>=numTwo){
+        theAns=("TRUE");
+      }
+    else {
+        theAns=("FALSE");
+      }
+    document.getElementById("theResult").innerHTML=theAns;
+  } 
+  function lsThanEqTo(){
+    numOne=Number(document.formCalc.first.value);
+    numTwo=Number(document.formCalc.second.value);
+    if(numOne<=numTwo){
+        theAns=("TRUE");
+      }
+    else {
+        theAns=("FALSE");
+      }
+    document.getElementById("theResult").innerHTML=theAns;
+  } 
+  function notEqTo(){
+    numOne=Number(document.formCalc.first.value);
+    numTwo=Number(document.formCalc.second.value);
+    if(numOne!=numTwo){
+        theAns=("TRUE");
+      }
+    else {
+        theAns=("FALSE");
+      }
+    document.getElementById("theResult").innerHTML=theAns;
+  } 
+  </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <style>
+    *{
+       margin:0;
+       padding:0;
+       font-family: Montserrat, sans-serif;
+       text-transform: uppercase;
+       text-decoration: none;
+       color:black;
+      }
+      .header-left{
+        float: left;
+        padding-top:30px;
+        margin:0px 55px;
+        font-size:22px;   
+        font-weight: bolder;
+        word-spacing: 1em;
+      }
+      .header-center{
+        float: center;
+        padding-bottom:30px;
+        font-size:32px;  
+        font-weight:900;
+      }
+      .wrapper{
+        overflow:hidden;
+        position:relative;
+      }
+      .wrapper .article-image {
+        -webkit-filter: grayscale(0) blur(0);
+        filter: grayscale(0) blur(0);
+        transition: .3s linear;
+      }
+      .wrapper:hover .article-image{ 
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+        transition: .3s linear;
+      }
+      .wrapper > p {
+        display: none;
+        position: absolute;
+        top: 40%;
+        color: #ffffff;
+        font-size: 30px;
+        letter-spacing: 0.25em;
+        font-weight: 900;
+        z-index: 9999999;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: .3s linear;
+        pointer-event:none;
+      }
+      .wrapper:hover > p {
+        display: block;
+      }                    
+      .content{
+        padding-top:30px;
+        margin:0px 55px;
+        font-size:18px;  
+        font-weight:lighter;
+        letter-spacing:0.1em;
+      }
+      #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #c5ced5; /* Set a background color */
+        opacity:0.5;
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding-top: 7px;
+        padding-bottom:10px;
+        padding-left:20px;
+        padding-right:20px; /* Some padding */
+        border-radius: 50px; /* Rounded corners */
+        font-size: 40px; /* Increase font size */
+      }
+      #myBtn:hover {
+        background-color: lightgray; /* Add a dark-grey background on hover */
+      }
+      input[type=text], select, textarea {
+        width: 50%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      label {
+        display: inline-block;
+      }
+      input[type=submit] {
+        background-color: lightgray;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: center;
+      }
+      input[type=submit]:hover {
+        color: gray;
+      }
+      .col-75 {
+        float: center;
+        width: 50%;
+        margin-top: 6px;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+    <div class="header-left">
+      <a href="index.html">WORK</a>
+      <a href="aboutPage.html">ABOUT</a>
+      <a href="contactPage.html">CONTACT</a>
+    </div>
+    <title>Portfolio</title>
+        
+  </head>
+  <body>
+     <button onclick="topFunction()" id="myBtn" title="Go to top">&#129121;</button> 
+    <p>
+      <br>
+      <br>
+      <br>      
+      <br>
+      <br>
+      <div class="box-1">
+        <div class="header-center"><center>TIFFANY LOUIE</center></div>
+        <br>
+    <br>
+    <br>
+    <br>
+      <center><h1>Contact</h1></center>
+    <br>
+    <br>
+    <br>
+      <center>
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your email address..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </center>
+  </center>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<html>
+<head>
+  <style>
+  body{
+  background-color:#f4f4f4;
+  color:black;
+  font: normal 16px Georgia, serif;
+  line-height:1.6em;  
+  margin:0;
+  }
+  .button{
+  background-color:#333;
+  color:#fff;
+  padding:10px;
+  padding-left:20px;
+  padding-right:20px;
+  border:none;
+  }
+  .previous {
+  font: lora, serif;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  color: white;
+  border-radius: 5px;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  left: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #c5ced5; /* Set a background color */
+  //opacity:0.5;
+  color: black; 
+}
+.next {
+  font: lora, serif;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  color: white;
+  border-radius: 5px;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #c5ced5; /* Set a background color */
+  //opacity:0.5;
+  color: black; 
+}
+  </style>
+<center>
+  <title>Lab 11</title>
+  <h1>Lab 11 - Form</h1>
+  <h2>Tiffany Louie</h2>
+</center>
+</head>
+<body>
+  <!--<a href="index.html" class="previous">&laquo; Index</a>-->
+    <a href="lab12.html" class="next">Lab 12 &raquo;</a>
+  <hr>
+  <br>
+<center>
+  <form name="alertForm">
+  Name:
+  <input type="text" name="yourName" ><br>
+  <br>
+  Phone:
+  <input type="text" name="yourPhone"><br>
+  <br>
+  Email:
+  <input type="text" name="yourEmail"><br>
+  <br>
+  <input type="button" class= "button" value="Go" onClick="window.alert('Hello '+document.alertForm.yourName.value+'! We will be in touch via '+document.alertForm.yourPhone.value+' or '+document.alertForm.yourEmail.value+' soon!');">
+  </form>
+</center>
+  <script>
+
+  </script>
+</body>
+</html>

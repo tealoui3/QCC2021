@@ -3,31 +3,199 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <style>
+    *{
+       margin:0;
+       padding:0;
+       font-family: Montserrat, sans-serif;
+       text-transform: uppercase;
+       text-decoration: none;
+       color:black;
+      }
+      .header-left{
+        float: left;
+        padding-top:30px;
+        margin:0px 55px;
+        font-size:22px;   
+        font-weight: bolder;
+        word-spacing: 1em;
+      }
+      .header-center{
+        float: center;
+        padding-bottom:30px;
+        font-size:32px;  
+        font-weight:900;
+      }
+      .wrapper{
+        overflow:hidden;
+        position:relative;
+      }
+      .wrapper .article-image {
+        -webkit-filter: grayscale(0) blur(0);
+        filter: grayscale(0) blur(0);
+        transition: .3s linear;
+      }
+      .wrapper:hover .article-image{ 
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+        transition: .3s linear;
+      }
+      .wrapper > p {
+        display: none;
+        position: absolute;
+        top: 40%;
+        color: #ffffff;
+        font-size: 30px;
+        letter-spacing: 0.25em;
+        font-weight: 900;
+        z-index: 9999999;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: .3s linear;
+        pointer-event:none;
+      }
+      .wrapper:hover > p {
+        display: block;
+      }                    
+      .content{
+        padding-top:30px;
+        margin:0px 55px;
+        font-size:18px;  
+        font-weight:lighter;
+        letter-spacing:0.1em;
+      }
+      #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #c5ced5; /* Set a background color */
+        opacity:0.5;
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding-top: 7px;
+        padding-bottom:10px;
+        padding-left:20px;
+        padding-right:20px; /* Some padding */
+        border-radius: 50px; /* Rounded corners */
+        font-size: 40px; /* Increase font size */
+      }
+      #myBtn:hover {
+        background-color: lightgray; /* Add a dark-grey background on hover */
+      }
+    </style>
+    <div class="header-left">
+      <a href="index.html">WORK</a>
+      <a href="aboutPage.html">ABOUT</a>
+      <a href="contactPage.html">CONTACT</a>
+    </div>
     <title>Portfolio</title>
-    
+        
   </head>
   <body>
+     <button onclick="topFunction()" id="myBtn" title="Go to top">&#129121;</button> 
     <p>
-      <a href= "QC2021/Labs/Lab1/lab1.html">Lab1</a><br>
-        <a href= "QC2021/Labs/Lab2/lab2.html">Lab2</a><br>
-        <a href= "QC2021/Labs/Lab3/lab3.html">Lab3</a><br>
-        <a href= "QC2021/Labs/Lab4/Lab4.html">Lab4</a><br>
-        <a href= "QC2021/Labs/Lab5/Lab5.html">Lab5</a><br>
-        <a href= "QC2021/Labs/Lab6/lab6.html">Lab6</a><br>
-        <a href= "QC2021/Labs/Lab7/lab7.html">Lab7</a><br>
-        <a href= "QC2021/Labs/Lab8/lab8.html">Lab8</a><br>
-        <a href= "QC2021/Labs/Lab9/lab9.html">Lab9</a><br>
-        <a href= "QC2021/Labs/Lab10/lab10.html">Lab10</a><br>
-        <a href= "QC2021/Labs/Lab11/11.html">Lab11</a><br>
+      <br>
+      <br>
+      <br>      
+      <br>
+      <br>
+      <div class="box-1">
+        <div class="header-center"><center>TIFFANY LOUIE</center></div>
         <br>
-        <a href= "QC2021/HW/draft1.html">draft1.html</a><br>
-        <a href= "QC2021/HW/draft2.html">draft2.html</a><br>
-        <a href= "QC2021/HW/draft3.html">draft3.html</a><br>
-       <br>
-        <a href= "QC2021/HW/testing.html">testing.html</a><br>
-        <a href= "QC2021/Practice/rm2.html">rm2.html</a><br>
-        <a href= "QC2021/Practice/css.css">css.css</a><br> 
-       
-    </p>      
+    <table width="90%">
+      <thead>        
+        <tr>         
+          <center>
+            <div class="wrapper">
+              <div class="article-image"><a href= "QC2021/HW/draft3.html"><img src="Project1.png" alt="project1" class="p1-img" width="770px"></a> 
+              </div>
+              <p class="caption">MOVIE PROJECT</p>
+            </div>
+
+            <div class="wrapper">
+              <div class="article-image"><a href= "https://replit.com/@tealoui3/Python-Labs?v=1"><img src="pythonGame.png" alt="python_game" width="770px" class="pyg-img"></a> 
+              </div>
+              <p class="caption">PYTHON GAME</p>
+            </div>
+
+            <div class="wrapper">
+              <div class="article-image"><a href= "lab1.html"><img src="labs123.png" alt="labs123" width="770px" height="500px" class="123-img"></a> 
+              </div>
+              <p class="caption" style="color:black;">LABS 1-3<br>Hyperlinks<br>Atrributes<br>Values</p>
+            </div>
+
+            <div class="wrapper">
+              <div class="article-image"><a href= "Lab4.html"><img src="labs456.png" alt="labs456" width="770px" class="456-img"></a> 
+              </div>
+              <p class="caption">LABS 4-6<br>Colors<br>Tables<br>Favicon</p></p>
+            </div>
+
+            <div class="wrapper">
+              <div class="article-image"><a href= "lab8.html"><img src="lab10.png" alt="lab10" width="770px" height"900px" class="8910-img"></a> 
+              </div>
+              <p class="caption" style="color:black;">LABS 8-10<br>CSS<br>Navigation Bar<br>Javascript</p></p>
+            </div>
+
+            <div class="wrapper">
+              <div class="article-image"><a href= "lab11a.html"><img src="lab13.png" alt="labs1114" width="770px" height"900px" class="1114-img"></a> 
+              </div>
+              <p class="caption" style="color:#67caf4">LABS 11-14<br>Forms<br>Calculations<br>Operators</p></p>
+            </div>
+
+            <div class="wrapper">
+              <div class="article-image"><a href= "lab15.html"><img src="lab15.png" alt="lab15" width="770px" height"900px" class="15-img"></a> 
+              </div>
+              <p class="caption" style="color:#304b49">LAB 15<br>Javascript Ninja</p></p>
+            </div>
+          </center>
+        </tr>
+      </thead>
+    </table> 
+      <div class="content">
+          <!--<a href= "QC2021/Labs/Lab1/lab1.html">LAB1</a><br>
+          <a href= "QC2021/Labs/Lab2/lab2.html">LAB2</a><br>
+          <a href= "QC2021/Labs/Lab3/lab3.html">LAB3</a><br>
+          <a href= "QC2021/Labs/Lab4/Lab4.html">LAB4</a><br>
+          <a href= "QC2021/Labs/Lab5/Lab5.html">LAB5</a><br>
+          <a href= "QC2021/Labs/Lab6/lab6.html">LAB6</a><br>
+          <a href= "QC2021/Labs/Lab7/lab7.html">LAB7</a><br>
+          <a href= "QC2021/Labs/Lab8/lab8.html">LAB8</a><br>
+          <a href= "QC2021/Labs/Lab9/lab9.html">LAB9</a><br>
+          <a href= "QC2021/Labs/Lab10/lab10.html">LAB10</a><br>
+          <a href= "QC2021/Labs/Lab11/lab11a.html">LAB11</a><br>
+          <a href= "QC2021/Labs/Lab11/lab12.html">LAB12</a><br>
+          <a href= "QC2021/Labs/Lab11/lab13.html">LAB13</a><br>
+          <a href= "QC2021/Labs/Lab11/lab14.html">LAB14</a><br>
+          <a href= "QC2021/Labs/Lab15/lab15.html">LAB15</a>
+          -->
+          <br>
+          <br>
+      </div>
+    </p> 
+    <script>
+      //Get the button:
+      mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      } 
+    </script>
   </body>
 </html>

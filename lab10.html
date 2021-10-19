@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<meta charset="utf-8">
+  <div id="sty2"><link rel="stylesheet" href="stylea.css"></div>
+
+	<title>LAB 10</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+  
+  }
+  li a{
+    display: inline;
+    float: left;
+    color: #000;
+    padding: 0px 16px;
+    text-decoration: none;
+  
+  }
+  li a:hover{
+    color: white;
+  }
+  .previous {
+    font: lora, serif;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    color: white;
+    border-radius: 5px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    left: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #c5ced5; /* Set a background color */
+    //opacity:0.5;
+    color: black; 
+  }
+  .next {
+    font: lora, serif;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    color: white;
+    border-radius: 5px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #c5ced5; /* Set a background color */
+    //opacity:0.5;
+    color: black; 
+  }
+</style>
+</head>
+
+<body>
+  <a href="lab9.html" class="previous">&laquo; Lab 9</a>
+  <a href="index.html" class="next">Index &raquo;</a>
+  <div class="header">
+    <h1>LAB 10</h1>
+		<p>Javascript & CSS</p>
+  </div>
+
+  <div class="topnav">
+    <a href="http://cnn.com">CNN</a>
+    <a href="http://w3schools.com">W3Schools</a>
+    <a href="http://edmodo.com">Edmodo</a>
+  </div>
+    <div class="body">
+      <ul>
+        <li><a href="">page0</a></li>
+        <li><a href="">page1</a></li>
+        <li><a href="">page2</a></li>
+      </ul>
+    <i class="glyphicon glyphicon-remove"></i>
+    <i class="glyphicon glyphicon-user"></i>
+    <i class="glyphicon glyphicon-camera"></i>
+    <i class="glyphicon glyphicon-thumbs-up"></i>
+    <i class="glyphicon glyphicon-signal"></i>
+    <i class="glyphicon glyphicon-heart"></i>
+
+    <i class="material-icons">cloud</i>
+    <i class="material-icons">favorite</i>
+    <i class="material-icons">attachment</i>
+    <i class="material-icons">computer</i>
+    <i class="material-icons">traffic</i>
+    <i class="material-icons">fingerprint</i>
+    <i class="material-icons">airplane</i>
+
+      <button id="show" onclick="styChange()">CSS 2</button>
+      <button id="show" onclick="styChange1()">CSS 3</button>
+      <button id="show" onclick="styChange2()">CSS 4</button>
+      <button id="show" onclick="styChange3()">CSS</button>
+    </div>
+  <div class="row">
+    <div class="column">
+      <a href="gameChoice1/g1.html">
+        <h2>HTML</h2>
+      </a>
+      <p id="demo">HTML is hyper-text markup language; a language displaying the content of a page as well as its' intended format. HTML uses 'tags', enclosed between angle brackets, to markup (or format) the text. HTML also includes hypertext links which allow users to access another page or resource. </p>
+    </div>
+    <div class="column">
+      <h2>CSS</h2>
+    <p>Enter Student </p>
+    <form name="listForm">
+      First Name:<br><input name="fn" type="text"></br>
+      Last Name:<br><input name="fn" type="text"></br>
+      DOB:<br><input name="fn" type="text"></br>
+      Eye Color:<br><input name="fn" type="text"></br>
+      Super Power:<br><input name="fn" type="text"></br>
+      </form>
+  <h4>These are my students</h4>
+  <p id="arraydemo"></p>
+  </div>
+   <div class="column">
+   <h2>Javascript</h2>
+   <p id="pop">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <button id="change" onclick="change()">Click here to see JS in action</button>
+    </div>
+    </div>
+  </div>
+  <script>
+    //this will react to clicking the button
+  function change() {
+    /*write inside the element pop*/
+    document.getElementById('pop').innerHTML= "Hey Band!! How are you?";
+  }
+
+
+  function styChange() {
+    document.getElementsByTagName("link")[0].setAttribute("href", "style1b.css");
+  }
+  function styChange1() {
+    document.getElementsByTagName("link")[0].setAttribute("href", "style1c.css");
+  }
+  function styChange2() {
+    document.getElementsByTagName("link")[0].setAttribute("href", "style1d.css");
+  }
+   function styChange3() {
+    document.getElementsByTagName("link")[0].setAttribute("href", "style1a.css");
+  }
+
+
+  document.addressform.yourname.value
+  document.addressform.phone.value
+  document.addressform.email.value
+
+  <form name="alertform">
+  Enter your name:
+  <input type="text" name="yourname">
+  <input type="button" value="Go" onClick="window.alert('Hello '+document.alertform.yourname.value);">
+  </form>
+
+  </script>
+	</body>
+</html>

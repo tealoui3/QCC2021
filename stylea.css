@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  //background-color:#e7f8ff;
+}
+:root {
+  --s1: style.css;
+  --s2: style1.css;
+  --s3: style2.css;
+  --s4: style4.css;
+
+}
+
+#s1 {
+    link href:vr(--s1);
+}
+
+/*<style>
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    background-color: #f1f1f1;
+  }
+  li a{
+    display: inline;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  li a:hover{
+    background-color: #555;
+    color: white;
+  }
+</style>*/
+
+.body {
+  margin: 10;
+  background-color:#e7f8ff;
+}
+/*Style the header */
+.header {
+  background-color: #3e314b;
+  color:#ff9760;
+  padding: 20px;
+  text-align: center;
+}
+/*Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #fdeb7f;
+  }
+/*Style the topnav links */
+.topnav  a{
+  float: left;
+  display: block;
+  color: #3e314b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #EE9480;
+    color: #CCD7C5;
+  }
+  /* Create three equal columns that floats next to each other */
+  .row{
+    background-color:#e7f8ff;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    background-color:#e7f8ff;
+  }
+

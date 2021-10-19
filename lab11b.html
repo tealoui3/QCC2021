@@ -1,0 +1,76 @@
+<html>
+<center>
+<head>
+  <style>
+  body{
+  background-color:#f4f4f4;
+  color:black;
+  font: normal 16px Georgia, serif;
+  line-height:1.6em;  
+  margin:0;
+  }
+  .button{
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:#333;
+    color:#fff;
+    border-color:black;
+  }
+  </style>
+  <title>Lab 11b</title>
+</head>
+<h1>Lab 11b - Calculations</h1>
+<h2>Tiffany Louie</h2>
+</center>
+<body>
+  <hr>
+  <br>
+<center>
+  <form name="formCalc">
+  First Number:
+  <input type="text" name="first" maxlength="4" size="4">
+  <br>
+  <br>
+  Second Number:
+  <input type="text" name="second" maxlength="4" size="4">
+  <br>
+  <br>
+  <input type="button" class="button" onClick="prodValues()"  Value="x">
+  <input type="button" class="button" onClick="quotValues()"  Value="/">
+  <input type="button" class="button" onClick="sumValues()"  Value="+">
+  <input type="button" class="button" onClick="diffValues()"  Value="-">
+  <br>
+  <br>
+  Result =
+  <input type="text" name="theResult" maxlength="4" size="4">
+  </form> 
+</center>
+  <script>
+  function prodValues(){
+    numOne=Number(document.formCalc.first.value);
+    numTwo=Number(document.formCalc.second.value);
+    theProd=numOne*numTwo;
+    document.formCalc.theResult.value=theProd;  
+  }
+  function quotValues(){
+    numOne=Number(document.formCalc.first.value);
+    numTwo=Number(document.formCalc.second.value);
+    theQuot=numOne/numTwo;
+    document.formCalc.theResult.value=theQuot;  
+  }
+  function sumValues(){
+    numOne=Number(document.formCalc.first.value);
+    numTwo=Number(document.formCalc.second.value);
+    theSum=numOne+numTwo;
+    document.formCalc.theResult.value=theSum;  
+  }
+  function diffValues(){
+    numOne=Number(document.formCalc.first.value);
+    numTwo=Number(document.formCalc.second.value);
+    theDiff=numOne-numTwo;
+    document.formCalc.theResult.value=theDiff;  
+  }
+  </script>
+</body>
+</html>

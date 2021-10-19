@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab 15</title>
+
+  </head>
+  <body>
+    <div>
+      Name: <input id="name"></input>
+    </div>
+    <button onClick="show_message()">Show Message</button>
+    <div id="message"></div>
+    <hr>
+    <form name="calc">
+      <input type="text" id="number" class="number"> +
+      <input type="text" id="other_number" class="other_number")> =
+      <span id="sum" class="sum"></span>
+    </form>
+    <button onClick="add_numbers()">Add numbers</button>
+    <hr>
+    <div>
+      Color:<input id="color">
+    </div>
+    <button onClick="change_color()">Change Color</button>
+    <hr>
+    <div>  
+    <span id="damage" class="damage"></span>
+    <br>   
+    <button id="sound" onClick="play_punch_sound()">Punch!</button>
+    <button id="hide" onClick="hide_ninja()">Hide!</button>
+    <button id="show" onClick="show_ninja()">Show!</button>
+    <button id="teleport" onClick="teleport_ninja()">Teleport!</button>
+    </div>
+    <hr>
+    <div id="ninja_container">
+    <img src="ninja1.png" id="ninja1">
+    <img src="wall.png" id="wall">
+    </div>
+
+    
+
+    <style>
+      body, button, input{
+        font-size:24px;
+      }
+      input{
+        width:150px;
+      }
+      body{
+        padding: 40px 40px;
+      }
+      hr{
+        margin-top:40px;
+        margin-bottom:40px;
+      }
+      .number{
+        width: 40px;
+      }
+      .other_number{
+        width: 40px;
+      }
+      #ninja_container{
+        height: 800px;
+      }
+      #ninja1{
+        position:absolute;
+        top:750px;
+        
+      }
+      #wall{
+        position:absolute;
+        left:400px;
+        height: 400px;
+      }
+    </style>
+    <script>   
+      function show_message(){
+        var message="Hello";
+        var name=document.getElementById("name").value;
+        message=message+" "+name+ "!";
+        document.getElementById("message").innerHTML=message;
+      }
+
+      function add_numbers(){
+        var number=Number(document.calc.number.value);
+        var other_number=Number(document.calc.other_number.value);
+        
+        var sum= number+other_number;
+        document.getElementById("sum").innerHTML=sum;
+      }
+
+      function change_color(){
+        var color=document.getElementById('color').value;
+        document.body.style.backgroundColor=color;
+      }
+      punch_sound=new Audio("punch.wav");
+      num=0
+      function play_punch_sound(){
+        punch_sound.play();
+        num+=Number("3")
+        var damage="Damage +"+num;
+        document.getElementById("damage").innerHTML=damage;
+        document.write
+      }
+
+      var ninja=document.getElementById("")
+      var hide_ninja=function(){
+        ninja1.style.display="none";
+      }
+      
+      var show_ninja=function(){
+        ninja1.style.display="";        
+      }
+
+      var teleport_ninja=function(){
+        ninja1.style.left="400px";        
+      }
+      
+    </script>
+  </body>
+</html>

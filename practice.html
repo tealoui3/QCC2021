@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <!--<a href="myfile.html">My Page</a>
+    <br />
+    <a href="myfile.html" onMouseover="window.alert('Welcome!');">My Page</a>-->
+    <script src="lab11.js"></script>
+  </head>
+
+  <body>
+      <form name="alertform">
+      name:
+      <input type="text" name="yourname">
+      <input type="button" value="Go" onClick="window.alert('Hello '+document.alertform.yourname.value);">
+      </form>
+      <br>
+
+      <!--<form name="addForm">
+      Numbers:
+      var numOne=<input type="text" name="yourNum1">
+      var numTwo=<input type="text" name="yourNum2">
+      var sum= numOne+numTwo
+      <input type="button" value="+" onClick="window.alert('Your total is '+document.alertform.sum.value);">
+      </form>-->
+
+    <script>
+      function test(x){
+        x=2*x;
+        document.write(x);//displays: 2*what was pass in
+      }
+      var x=3;
+      document.write(x);//displays:3
+      test(x);//will display 6 inside test
+      document.write(x+"<br>");//displays:3(x wasn't modified)
+
+      /*c=confirm("Continue?");
+      if(c){
+        alert("walk")
+      }
+      else {
+        alert("stop")
+      }*/
+
+      var x="Hello World!";
+      var y="IT's MY NAMe...";
+      var z= document.alertform.yourname.value;
+      document.write(x+"<br>"+y+z);
+
+      document.write("<h1>Aloha Planet</h1>");
+      document.write('This is my first Javascript Page');
+    </script>
+  </body>
+</html>
+
+<!--alert("STOP");window.prompt('enter your name: ', '');
+var uName=prompt('Enter your name: ');
+console.log(uName);
+
+<form name="alertform">
+Enter your name:
+<input type="text" name="yourname">
+<input type="button" value="Go" onClick="window.alert('Hello '+document.alertform.yourname.value);">
+</form>*/

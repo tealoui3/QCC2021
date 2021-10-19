@@ -1,5 +1,5 @@
 #execution 1
-rounds=input("How many rounds do you want to pla? ")
+rounds=input("How many rounds do you want to play? ")
 attempts=0
 for i in range(int(rounds)):
   num=7
@@ -17,7 +17,7 @@ print("Attempts = "+str(attempts))
 
 #execution 2, random and avg score
 
-"""rounds=input("How many rounds do you want to play? ")
+rounds=input("How many rounds do you want to play? ")
 attempts=0
 score=0
 import random
@@ -69,4 +69,4 @@ for i in range(int(rounds)):
   score=score+points
   time=end-start
 print("Attempts = "+str(attempts)+", "+"Score = "+str(score)+", "+"Time = "+str(round(time))+" sec.")
-"""
+

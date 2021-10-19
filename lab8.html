@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <style>
+        .previous {
+        font: lora, serif;
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #f1f1f1;
+        color: white;
+        border-radius: 5px;
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        left: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #c5ced5; /* Set a background color */
+        //opacity:0.5;
+        color: black; 
+      }
+      .next {
+        font: lora, serif;
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #f1f1f1;
+        color: white;
+        border-radius: 5px;
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #c5ced5; /* Set a background color */
+        //opacity:0.5;
+        color: black; 
+      }
+  </style>
+	<meta charset="utf-8">
+  <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+    <a href="index.html" class="previous">&laquo; Index</a>
+    <a href="lab9.html" class="next">Lab 9 &raquo;</a>
+  <div class="header">
+    <h1>Lab 8</h1>
+		<p>CSS & Lorem Ipsum</p>
+  </div>
+
+  <div class="topnav">
+    <a href="http://cnn.com">CNN</a>
+    <a href="http://w3schools.com">W3Schools</a>
+    <a href="http://edmodo.com">Edmodo</a>
+  </div>
+
+  <div class="row">
+    <div class="column">
+        <h2>HTML</h2>
+      <p id="demo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="column">
+      <h2>CSS</h2>
+    <p>Enter Student </p>
+    <form name="listForm">
+      First Name:<br><input name="fn" type="text"></br>
+      Last Name:<br><input name="fn" type="text"></br>
+      Birthday:<br><input name="fn" type="text"></br>
+      Eye Color:<br><input name="fn" type="text"></br>
+      Super Power:<br><input name="fn" type="text"></br>
+      </form>
+  <h4>These are my students</h4>
+  <p id="arraydemo"></p>
+  </div>
+
+   <div class="column">
+   <h2>Javascript</h2>
+   <p id="pop">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <button id="change" onclick="change()">Click here to see JS in action</button>
+     </div>
+    </div>
+  </div>
+
+	</body>
+</html>

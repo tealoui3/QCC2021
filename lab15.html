@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+    .previous {
+    font: lora, serif;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    color: white;
+    border-radius: 5px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    left: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #c5ced5; /* Set a background color */
+    //opacity:0.5;
+    color: black; 
+  }
+  .next {
+    font: lora, serif;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    color: white;
+    border-radius: 5px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #c5ced5; /* Set a background color */
+    //opacity:0.5;
+    color: black; 
+  }
+  body, button, input{
+    font-size:24px;
+  }
+  .body{
+    background-color:#edca52;
+  }
+  #ninja_container{ 
+    height: 550px;
+    background-color:#edca52;
+  }
+  #ninja1{
+    position:absolute;
+    left:450px;
+    top:450px;        
+  }
+  #ninja2{
+    position:absolute;
+    top:450px;
+    left:450px;       
+  }
+  #ninja3{
+    position:absolute;
+    left:450px;
+    top:450px;      
+  }
+  #wall{
+    position:absolute;
+    left:800px;
+    height: 400px;
+  }
+  </style>
+    <div class="head">
+      <center>
+        <title>Lab 15</title>
+        <h1>Lab 15 - JS</h1>
+        <h2>Tiffany Louie</h2>
+      </center>
+      <hr>
+    </div>
+  </head>
+  <body>
+    <a href="index.html" class="previous">&laquo; Index</a>
+    <!--<a href="lab2.html" class="next">Lab 2 &raquo;</a>-->
+  <center>
+    <div class="body">  
+      <span id="damage" class="damage"></span>
+      <br>  
+      <br>
+      <button class="button" id="sound" onClick="play_punch_sound()">Kick!</button>
+      <button class="button" id="hide" onClick="hide_ninja()">Hide!</button>
+      <button class="button" id="show" onClick="show_ninja()">Show!</button>
+      <button class="button" id="teleport" onClick="teleport_ninja()">Teleport!</button>
+    </div>  
+    <div id="ninja_container">
+      <img src="ninja2.png" id="ninja2">
+      <img src="ninja3.png" id="ninja3">
+      <img src="ninja1.png" id="ninja1">    
+      <img src="wall.png" id="wall">   
+    </div>
+  </center>  
+    <script>   
+      punch_sound=new Audio("punch.wav");
+      hide_sound=new Audio("hide.wav");
+      teleport_sound=new Audio("teleport.wav");
+      num=0
+      function play_punch_sound(){
+        punch_sound.play();
+        num+=Number("3")
+        var damage="Damage +"+num;
+        document.getElementById("damage").innerHTML=damage;
+        document.write
+          var show_ninja2=function(){
+          ninja1.style.display="none";
+          ninja3.style.display="none";
+          ninja2.style.display="";        
+          }
+          show_ninja2();
+      }
+      
+      var hide_heroes=function(){
+        ninja3.style.display="none";
+        ninja2.style.display="none";
+      }
+      
+      var hide_ninja=function(){
+        hide_sound.play();
+        var damage="Incognito?!";
+        document.getElementById("damage").innerHTML=damage;
+        document.write
+        ninja1.style.display="none";
+        ninja2.style.display="none";
+        ninja3.style.display="none";
+      }
+      
+      var show_ninja=function(){
+        var damage="There he is again!";
+        document.getElementById("damage").innerHTML=damage;
+        document.write
+        hide_sound.play();
+        ninja3.style.display="none";
+        ninja2.style.display="none";
+        ninja1.style.display="";        
+      }      
+      
+      var teleport_ninja=function(){
+        teleport_sound.play();
+        var damage="He's escaped!";
+        document.getElementById("damage").innerHTML=damage;
+        document.write
+        ninja1.style.display="none";
+        ninja2.style.display="none";
+        ninja3.style.display="";
+        ninja3.style.left="900px";        
+      }
+      hide_heroes();
+    </script>
+  </body>
+</html>

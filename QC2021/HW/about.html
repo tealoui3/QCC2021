@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+    <style>
+      .previous {
+        font: lora, serif;
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #f1f1f1;
+        color: white;
+        border-radius: 5px;
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        left: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #c5ced5; /* Set a background color */
+        opacity:0.5;
+        color: white; 
+      }
+      .next {
+        font: lora, serif;
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #f1f1f1;
+        color: white;
+        border-radius: 5px;
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #c5ced5; /* Set a background color */
+        opacity:0.5;
+        color: white; 
+      }
+            input[type=text], select, textarea {
+        width: 50%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      label {
+        display: inline-block;
+      }
+      input[type=submit] {
+        background-color: lightgray;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: center;
+      }
+      input[type=submit]:hover {
+        color: gray;
+      }
+      .col-75 {
+        float: center;
+        width: 50%;
+        margin-top: 6px;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .previous {
+        font: lora, serif;
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #f1f1f1;
+        color: white;
+        border-radius: 5px;
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        left: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #c5ced5; /* Set a background color */
+        opacity:0.5;
+        color:white ; 
+      }
+      .next {
+        font: lora, serif;
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #f1f1f1;
+        color: white;
+        border-radius: 5px;
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #c5ced5; /* Set a background color */
+        opacity:0.5;
+        color: white; 
+      }
+    </style>  
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <div class="header">
+      <left>
+        <img src="reel5.png" alt="reel" width="400px">
+        <div class="header-right">
+          <a href="draft3.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <hr>
+  </head>
+  <body>
+    <!--<a href="index.html" class="previous">&laquo; Index</a>-->
+    <a href="draft2.html" class="next">Draft 2 &raquo;</a>
+  <br>
+    <center>
+      <h1>About</h1><br>
+      <p><span style="text-transform:none;">This page is created for and by movie enthusiasts<br>looking for monthly recommendations. Subscribe<br> to our newsletter below to stay in the loop!</span></p><br>
+      <center>
+      <form action="/action_page.php">  
+        <div class="row">
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your email address..">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+      </center>
+    </center>
+  </body>
+</html>
