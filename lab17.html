@@ -17,8 +17,8 @@
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: #c5ced5; /* Set a background color */
-    //opacity:0.5;
-    color: black; 
+    opacity:0.5;
+    color: black;
   }
   .next {
     font: lora, serif;
@@ -36,7 +36,18 @@
     outline: none; /* Remove outline */
     background-color: #c5ced5; /* Set a background color */
     //opacity:0.5;
-    color: black; 
+    color: black;
+  }
+  #container{
+    width:90%;
+    margin:auto;
+    padding:10px;
+  }
+  #box{
+    background:red;
+    width:100px;
+    height:100px;
+    position:relative;
   }
   </style>
     <div class="head">
@@ -46,13 +57,63 @@
         <h2>Tiffany Louie</h2>
       </center>
       <hr>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </div>
   </head>
   <body>
     <a href="index.html" class="previous">&laquo; Index</a>
     <!--<a href="lab2.html" class="next">Lab 2 &raquo;</a>-->
-  
-    <script> 
+
+    <div id="container">
+      <button id="moveRight">Move Right</button>
+      <button id="moveLeft">Move Left</button>
+      <button id="moveAround">Move Around</button>
+      <button id="changeOp">Change Opacity</button>
+      <button id="changeSz">Change Size</button>
+      <div id="box"></div>
+    </div>
+
+    <script>
+      $('#moveRight').click(function(){
+        $('#box').animate({
+          left: 500
+        });
+      });
+      $('#moveLeft').click(function(){
+        $('#box').animate({
+          left: 0
+        });
+      });
+      $('#moveAround').click(function(){
+          var box = $('#box');
+          box.animate({
+            left:300
+          });
+          box.animate({
+            top:300
+          });
+          box.animate({
+            left:0,
+            top:300
+          });
+          box.animate({
+            left:0,
+            top:0
+          });
+        });
+      $('#changeOp').click(function(){
+        $('#box').animate({
+            opacity:'0.5'
+        });
+      });
+      $('#changeSz').click(function(){
+        $('#box').animate({
+          left: 0,
+          height:'300px',
+          width:'300px'
+        });
+      });
     </script>
+
   </body>
 </html>
